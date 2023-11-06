@@ -1,0 +1,46 @@
+.active{
+    color: var(--skin-color);
+}
+.btn {
+  font-size: 18px;
+  padding: 12px 35px;
+  font-weight: 500;
+  background: var(--skin-color);
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  border: none;
+  transition: all 0.8s ease;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  margin-right: 10px;
+}
+.btn:hover {
+  transform: scale(0.9);
+  transition: all 0.8s ease;
+  background-color: #fff;
+  color: var(--skin-color);
+  border: 1px solid var(--skin-color);
+  transition: all 0.5s;
+}
+.hire-me{
+    transition: all 0.8s ease;
+    background-color: #fff;
+    color: var(--skin-color);
+    border: 1px solid var(--skin-color);
+}
+.hire-me:hover{
+    background-color: var(--skin-color);
+    color: #fff;
+    transform: scale(0.9);
+}
+.padd-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hidden{
+    display: none !important;
+}
+.shadow{
+    box-shadow: 0 0 10px rgba(48, 46, 77, 0.15);
+}

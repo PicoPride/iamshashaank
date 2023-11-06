@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,500;1,600&display=swap");
+@import url(./adv-css.css);
+
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Poppins" sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: var(--text-black-700);
+}
+.section {
+  background-color: var(--bg-black-900);
+  min-height: 100vh;
+  /* position: fixed; */
+  padding: 0 30px;
+}
+.main-container {
+  padding-left: 270px;
+}
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside {
+  background-color: var(--bg-black-100);
+  width: 270px;
+  border-right: 1px solid var(--bg-black-50);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside .logo {
+  position: absolute;
+  font-size: 30px;
+  top: 50px;
+  text-transform: uppercase;
+}
+.aside .logo a {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 2vh 3vh;
+  position: relative;
+}
+.aside .logo a span {
+  font-family: "Clicker Script", cursive;
+  font-weight: 700;
+}
+
+.aside .logo a ::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
+  bottom: 0;
+  left: 0;
+}
+.aside .logo a ::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
+  top: 0;
+  right: 0;
+}
+.aside .nav .nav-toggler {
+  font-size: 30px;
+  color: var(--bg-black-50);
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+.aside .nav {
+  margin-top: 50px;
+}
+.aside .nav li {
+  margin-bottom: 20px;
+  display: block;
+}
+.aside .nav li a {
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-bottom: 1px solid var(--bg-black-50);
+  color: var(--text-black-900);
+}
+.aside .nav li a i {
+  margin-right: 15px;
+}
+
+/* Home Section Started */
+.home {
+  min-height: 100vh;
+  display: flex;
+  color: var(--text-black-900);
+}
+.home .home-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+h3.hello {
+  font-size: 28px;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+h3.hello span {
+  font-family: "Clicker Script", cursive;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--skin-color);
+}
+
+h3.my-profession {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.typing {
+  color: var(--skin-color);
+  text-transform: capitalize;
+}
+.home-info p {
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: var(--text-black-700);
+}
+
+.home .home-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+  transition: 0.9s ease;
+  cursor: pointer;
+}
+.home .home-img:hover {
+  transform: scale(1.05);
+  transition: all 0.9s ease;
+}
+.home-img::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-bottom: 10px solid var(--skin-color);
+  border-right: 10px solid var(--skin-color);
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+.home-img::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-top: 10px solid var(--skin-color);
+  border-left: 10px solid var(--skin-color);
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+.home-img img {
+  margin: auto;
+  border-radius: 10px;
+  width: 28vw;
+}
+
+/* About Us section Started */
+
+.section .container {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.section .section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.section .section-title h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  position: relative;
+}
+.section .section-title h3::before {
+  content: "";
+  width: 90px;
+  border-bottom: 5px solid var(--skin-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+.section .section-title h3::after {
+  content: "";
+  width: 50px;
+  border-bottom: 5px solid var(--skin-color);
+  position: absolute;
+  top: 66px;
+  left: 0;
+  border-radius: 2px;
+}
+.about .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about .about-content .about-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about .about-content .about-text h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-black-900);
+}
+.about .about-content .about-text h3 span {
+  color: var(--skin-color);
+  font-family: "Clicker Script", cursive;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.about .about-content .personal-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin-top: 50px;
+}
+.about .about-content .personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.about .about-content .personal-info .info-item p {
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  margin-left: 5px;
+  display: inline-block;
+}
+.about .about-content .personal-info .buttons {
+  margin-top: 50px;
+}
+
+.about .about-content .skills {
+  flex: 0 0 40%;
+  max-width: 40%;
+  margin-top: 50px;
+}
+.about .about-content .skills .skill-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.about .about-content .skills .skill-item h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  color: var(--text-black-900);
+  text-transform: uppercase;
+}
+.about .about-content .skills .skill-item .progress {
+  height: 13px;
+  width: 100%;
+  background-color: var(--bg-black-50);
+  border-radius: 8px;
+  position: relative;
+}
+.about .about-content .skills .skill-item .progress-in {
+  background-color: var(--skin-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+.about .about-content .skills .skill-item .skill-percent {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  font-weight: 400;
+  color: var(--text-black-900);
+  line-height: 1.3em;
+}
+.about .about-content .education,
+.about .about-content .experience {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.about .about-content .title {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+.about .about-content .timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about .about-content .timeline {
+  background-color: var(--bg-black-100);
+  padding: 30px 15px;
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+.about .about-content .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+.about .about-content .timeline-item:last-child {
+  padding-bottom: 0;
+}
+.about .about-content .timeline-item::before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .about-content .timeline-item .circle-dot {
+  height: 20px;
+  width: 20px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.about .about-content .timeline-item .timeline-date{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--text-black-700);
+}
+.about .about-content .timeline-item .fa{
+  margin-right: 5px
+}
+.about .about-content .timeline-item .timeline-title{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-black-900);
+  margin-bottom: 15px;
+}
+.about .about-content .timeline-item .timeline-text{
+  text-align: justify;
+}
