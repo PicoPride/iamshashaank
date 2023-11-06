@@ -375,22 +375,74 @@ h3.my-profession {
   top: 0;
   left: -10px;
 }
-.about .about-content .timeline-item .timeline-date{
+.about .about-content .timeline-item .timeline-date {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 12px;
   color: var(--text-black-700);
 }
-.about .about-content .timeline-item .fa{
-  margin-right: 5px
+.about .about-content .timeline-item .fa {
+  margin-right: 5px;
 }
-.about .about-content .timeline-item .timeline-title{
+.about .about-content .timeline-item .timeline-title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text-black-900);
   margin-bottom: 15px;
 }
-.about .about-content .timeline-item .timeline-text{
+.about .about-content .timeline-item .timeline-text {
   text-align: justify;
+}
+/* Services Section Start */
+.service .container{
+  padding-bottom: 40px;
+}
+.service .service-item {
+  margin-bottom: 30px;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.service .service-item .service-item-inner {
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.service .service-item .service-item-inner:hover{
+  box-shadow: 0 0 20px rgba(48, 23, 45, 0.15);
+}
+.service .service-item .service-item-inner .icon{
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.7s ease;
+}
+.service .service-item .service-item-inner .icon .fa{
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--skin-color);
+  transition: all 0.7s ease;
+}
+.service .service-item .service-item-inner:hover .icon{
+  background-color: var(--skin-color);
+}
+.service .service-item .service-item-inner:hover .icon .fa{
+  color: #fff;
+  font-size: 25px;
+}
+.service .service-item .service-item-inner h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--text-black-900);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.service .service-item .service-item-inner p{
+  
 }
