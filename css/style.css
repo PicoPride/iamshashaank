@@ -446,3 +446,72 @@ h3.my-profession {
 .service .service-item .service-item-inner p{
   
 }
+/* Portfolio section started
+.portfolio .container{
+  padding-bottom: 50px;
+} */
+.portfolio .portfolio-heading{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.portfolio .portfolio-heading h3{
+  color: var(--text-black-900);
+  font-weight: 500;
+}
+.portfolio .portfolio-item{
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 30px;
+}
+.portfolio .portfolio-item .portfolio-inner-item{
+  border: 1px solid var(--bg-black-100);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .portfolio-item .portfolio-inner-item .portfolio-img img{
+  width: 100%;
+  display: block;
+}
+/* Contact Us section */
+.contact-title{
+  color: var(--skin-color);
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.contact-sub-title{
+  color: var(--text-black-900);
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+.contact .contact-info-item{
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact .contact-info-item .icon{
+  display: inline-block;
+}
+.contact .contact-info-item .icon .fa{
+  color: var(--skin-color);
+  font-size: 25px;
+}
+.contact .contact-info-item h5{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  margin: 15px 0 5px;
+  text-transform: uppercase;
+}
+.contact .contact-info-item p{
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
