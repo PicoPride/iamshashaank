@@ -583,34 +583,38 @@ h3.my-profession {
   }
 }
 @media (max-width: 767px) {
+  .about .about-content .personal-info .info-item,
   .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
-}
-.about .about-content .education, .about .about-content .experience {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.portfolio .portfolio-item {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 30px;
-}
-.about .about-content .skills {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-}
+    
+  }
+  .about .about-content .education,
+  .about .about-content .experience {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  }
+  .portfolio .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .about .about-content .skills {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
 
 @media (min-width: 576px) and (max-width: 766.98px) {
- 
 }
 @media (max-width: 575.98px) {
   .portfolio .portfolio-item {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 30px;
-}
+  }
   .service .service-item {
     margin-bottom: 30px;
     flex: 0 0 100%;
@@ -619,15 +623,27 @@ h3.my-profession {
   .contact .contact-form .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
-}
-.btn {
-  margin-bottom: 10px;
-}
-.about .about-content .personal-info .buttons {
-  
-  text-align: center;
-}
-.form-group {
-  text-align: center;
+  }
+  .btn {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+  .about .about-content .personal-info .buttons {
+    text-align: center;
+  }
+  .form-group {
+    text-align: center;
+  }
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .section {
+    padding: 0 10px;
 }
 }
