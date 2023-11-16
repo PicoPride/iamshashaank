@@ -8,6 +8,10 @@
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
 }
+::selection{
+  background-color: var(--skin-color);
+  color: #fff;
+}
 body {
   line-height: 1.5;
   font-size: 16px;
@@ -446,6 +450,7 @@ h3.my-profession {
 .service .service-item .service-item-inner p {
 }
 /* Portfolio section started
+
 .portfolio .container{
   padding-bottom: 50px;
 } */
@@ -609,11 +614,6 @@ h3.my-profession {
     max-width: 100%;
     margin-top: 30px;
   }
-  }
-  .portfolio .portfolio-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
   }
   .about .about-content .skills {
     flex: 0 0 100%;
